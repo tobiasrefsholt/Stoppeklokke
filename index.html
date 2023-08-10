@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoppeklokke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="collumn">
+            <h1>
+                <span id="minutes">00</span>
+                :
+                <span id="seconds">00</span>
+                :
+                <span id="hundredth">00</span>
+            </h1>
+            <div>
+                <button onclick="startStopwatch()">Start</button>
+                <button onclick="newLapTime()">Ny rundetid</button>
+                <button onclick="stopStopwatch()">Stop</button>
+                <button onclick="clearStopwatch(true)">Clear</button>
+            </div>
+        </div>
+        <div class="collumn">
+            <h4>Rundetider</h2>
+            <div id="lap-times"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

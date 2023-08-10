@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    font-size: 3rem;
+    max-width: 1200px;
+}
+
+h1 span {
+    display: inline-block;
+    min-width: 6rem;
+    text-align: right;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.collumn {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
